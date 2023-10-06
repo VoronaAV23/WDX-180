@@ -109,7 +109,7 @@ Before you dive in, **make sure that you have your notebook** and colored pens b
     - Duration: 5min
     - Level: Beginner
 
-  - [Read: **Positional Notation, Binary, Octal and Hexadecimal numeric systems**](resources/Hexadecimal/README.md)
+  - [Read: **Positional Notation, Binary, Octal and Hexadecimal numeric systems**](resources/Hexadecimal/index.md)
 
 ### Summary
 
@@ -195,7 +195,7 @@ Before you dive in, **make sure that you have your notebook** and colored pens b
     - Level: Beginner
     - Captions: Yes
 
-  - [Read: **How the Internet works**](resources/How_the_Internet_works/README.md) to get some additional information and another perspective on how the Internet works.
+  - [Read: **How the Internet works**](resources/How_the_Internet_works/index.md) to get some additional information and another perspective on how the Internet works.
     - Reading time: 5min
     - Level: Beginner
 
@@ -364,13 +364,13 @@ Before you dive in, **make sure that you have your notebook** and colored pens b
 
   - Complete the following exercises and update the progress CSV files accordingly:
 
-  - [Complete: **Parent-Child Relationships** exercise](./exercises/1-parent-child/index.md)
+  - [Complete: **Parent-Child Relationships** exercise](./exercises/1-parent-child/instructions.md)
     - You can find this exercise, in the following path in your forked repository: `curriculum/week01/exercises/1-parent-child/`
 
-  - [Complete: **HTML Attributes** exercise](./exercises/2-html-attributes/index.md)
+  - [Complete: **HTML Attributes** exercise](./exercises/2-html-attributes/instructions.md)
     - You can find this exercise, in the following path in your forked repository: `curriculum/week01/exercises/2-html-attributes/`
 
-  - [Complete: **Semantic HTML** exercise](./exercises/3-semantic-html/index.md)
+  - [Complete: **Semantic HTML** exercise](./exercises/3-semantic-html/instructions.md)
     - You can find this exercise, in the following path in your forked repository: `curriculum/week01/exercises/3-semantic-html/`
 
   - [Complete the **Markdown Tutorial** exercise](https://www.markdowntutorial.com/)
@@ -406,7 +406,7 @@ Before you dive in, **make sure that you have your notebook** and colored pens b
   - Introduction to CSS
   - Publishing your website
 
-  - [Read: **CSS Basics**](resources/CSS_Basics/README.md)
+  - [Read: **CSS Basics**](resources/CSS_Basics/index.md)
   - [Read: **Publishing your website**](resources/Publishing_your_website/README.md)
 
 ### Summary
