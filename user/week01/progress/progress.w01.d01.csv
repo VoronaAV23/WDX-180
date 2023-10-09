@@ -1,0 +1,14 @@
+Week,Day,Concept,Task,Level,Confidence,Completed,Submitted Links
+1,1,Setting up: Markdown,Watch the 'What is markdown?' video,Beginner,9,TRUE
+1,1,Setting up: CSV,Complete the 'Understanding CSV Files' challenge,Beginner,9,TRUE
+1,1,Setting up: Slack,Connect on Slack: https://intechgration.slack.com,Beginner,9,TRUE
+1,1,Setting up: GitHub,Watched the 'WDX-180 - Setting up: SSH Keys Cloning repo & update progress' video,Beginner,7,TRUE
+1,1,Setting up: WDX,Fork WDX repository,Beginner,9,TRUE,https://github.com/VoronaAV23/WDX-180
+1,1,Setting up: WDX,Enable GitHub Pages on forked WDX repository,Beginner,9,TRUE,https://voronaav23.github.io/WDX-180/
+1,1,Setting up: Code editor,Install VSCode,Beginner,10,TRUE
+1,1,Setting up: Code editor,Install VSCode WDX Extension Pack,Beginner,10,TRUE
+1,1,Setting up: Node,Install Node.js (LTS),Beginner,10,TRUE
+1,1,Setting up: Version Control,Install Git,Beginner,9,TRUE,git version 2.42.0.windows.2
+1,1,Setting up: Productivity,Install Wikiwand Browser Extension: https://www.wikiwand.com/,Beginner,10,TRUE
+1,1,Computing Basics,Complete the 'Decode the secret message' challenge,Beginner, 8,TRUE, find a hobby for god's sake 
+1,1,Setting up: GitHub,Watched the 'WDX-180: Keeping our forked repository up-to-date and in-sync with the original repo' video,Beginner,8,TRUE
