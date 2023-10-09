@@ -10,5 +10,3 @@ if (userInput === "A") {
 } else {
     alert ("Invalid answer")
 }
-
-
