@@ -37,3 +37,8 @@ html {
     display: block;
     margin: 0 auto;
   }
+
+  .tight-spacing {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
