@@ -1,9 +1,9 @@
 Week,Day,Concept,Task,Level,Confidence,Completed,Instructions
-2,3,HTML Tables,Complete the 'Active learning: Creating your first table' exercise,Beginner,8,TRUE,
-2,3,HTML Tables,Complete the 'Active learning: table headers' first exercise,Beginner,8,TRUE,
-2,3,HTML Tables,Complete the 'Active learning: table headers' second exercise,Beginner,8,TRUE,
-2,3,HTML Tables,Complete the 'Active learning: colgroup and col' second exercise,Beginner,8,TRUE,
-2,3,HTML Tables,Complete the 'Active learning: Adding a caption' exercise,Beginner,8,TRUE,
-2,3,HTML Tables,Complete the 'Active learning: Adding table structure' exercise,Beginner,8,TRUE,
-2,3,HTML Tables,Complete the 'Active learning: playing with scope and headers' exercise,Beginner,8,TRUE,
-2,3,HTML Tables,Complete the 'Structuring planet data' exercise,Beginner,,TRUE,
+2,3,HTML Tables,Complete the 'Active learning: Creating your first table' exercise,Beginner,8,TRUE,https://voronaav23.github.io/WDX-180/user/week02/exercises/day03/html_table_basics/simple-template.html
+2,3,HTML Tables,Complete the 'Active learning: table headers' first exercise,Beginner,8,TRUE,file:///C:/Users/30697/Desktop/project1/WDX-180/user/week02/exercises/day03/html_table_basics/dogs-table.html
+2,3,HTML Tables,Complete the 'Active learning: table headers' second exercise,Beginner,8,TRUE, file:///C:/Users/30697/Desktop/project1/WDX-180/user/week02/exercises/day03/html_table_basics/animals-table.html
+2,3,HTML Tables,Complete the 'Active learning: colgroup and col' second exercise,Beginner,8,TRUE,file:///C:/Users/30697/Desktop/project1/WDX-180/user/week02/exercises/day03/html_table_basics/timetable.html
+2,3,HTML Tables,Complete the 'Active learning: Adding a caption' exercise,Beginner,8,TRUE,file:///C:/Users/30697/Desktop/project1/WDX-180/user/week02/exercises/day03/html_table_basics/timetable.html
+2,3,HTML Tables,Complete the 'Active learning: Adding table structure' exercise,Beginner,8,TRUE,file:///C:/Users/30697/Desktop/project1/WDX-180/user/week02/exercises/day03/html_table_basics/spending-record.html
+2,3,HTML Tables,Complete the 'Active learning: playing with scope and headers' exercise,Beginner,8,TRUE, file:///C:/Users/30697/Desktop/project1/WDX-180/user/week02/exercises/day03/html_table_basics/items-sold-headers.html, file:///C:/Users/30697/Desktop/project1/WDX-180/user/week02/exercises/day03/html_table_basics/items-sold-scope.html
+2,3,HTML Tables,Complete the 'Structuring planet data' exercise,Beginner,,TRUE,file:///C:/Users/30697/Desktop/project1/WDX-180/user/week02/exercises/day03/Structuring_planet_data/blank-template.html
