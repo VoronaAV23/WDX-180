@@ -1,7 +1,7 @@
 Week,Day,Concept,Task,Level,Confidence,Completed,Instructions
-2,4,HTML Forms,Complete the 'Active learning: Implementing our form HTML' challenge,Beginner,8,TRUE, submit the first-form.html file and update the CONFIDENCE column 
-2,4,HTML Forms,Complete the 'Basic form styling' challenge,Beginner,8,TRUE,submit the first-form-styled.html file and update the CONFIDENCE column
-2,4,HTML Forms,Complete the 'Active learning: building a form structure' challenge,Beginner,8,TRUE, submit the payment-form.html file and update the CONFIDENCE column
-2,4,HTML Forms,Complete the 'Test your skills: Form structure' challenge,Beginner,8,TRUE,submit the form-structure1-download.html file and update the CONFIDENCE column
-2,4,HTML Forms,Complete the 'Test_your_skills:_Basic_controls' challenge,Beginner,8,TRUE, submit the files and update the CONFIDENCE column
+2,4,HTML Forms,Complete the 'Active learning: Implementing our form HTML' challenge,Beginner,8,TRUE, https://voronaav23.github.io/WDX-180/user/week02/exercises/day04/your_first_form/first-form.html
+2,4,HTML Forms,Complete the 'Basic form styling' challenge,Beginner,8,TRUE,https://voronaav23.github.io/WDX-180/user/week02/exercises/day04/your_first_form/first-form.html
+2,4,HTML Forms,Complete the 'Active learning: building a form structure' challenge,Beginner,8,TRUE, https://voronaav23.github.io/WDX-180/user/week02/exercises/day04/how_to_structure_a_web_form/payment-form.html
+2,4,HTML Forms,Complete the 'Test your skills: Form structure' challenge,Beginner,8,TRUE,https://voronaav23.github.io/WDX-180/user/week02/exercises/day04/test_your_skills_form_structure/form01.html
+2,4,HTML Forms,Complete the 'Test_your_skills:_Basic_controls' challenge,Beginner,8,TRUE, https://voronaav23.github.io/WDX-180/user/week02/exercises/day04/test_your_skills_basic_controls/task01.html, https://voronaav23.github.io/WDX-180/user/week02/exercises/day04/test_your_skills_basic_controls/task02.html, https://voronaav23.github.io/WDX-180/user/week02/exercises/day04/test_your_skills_basic_controls/task03.html
 2,4,HTML,Work on the 'Let's create a Blog' challenge,Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column and update THE CONFIDENCE column
