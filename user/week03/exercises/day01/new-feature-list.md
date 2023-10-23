@@ -1,6 +1,8 @@
 # Step-by-step list for a new feature
 
-  - command1
-  - action1
-  - command2
-  - action2 
+- git add .
+- git status
+- git commit -m
+- git status
+- git push
+- git status
