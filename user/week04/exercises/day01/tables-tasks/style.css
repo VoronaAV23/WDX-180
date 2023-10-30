@@ -1,0 +1,64 @@
+/* Add padding of 0.3em to the table headings and data and align them at the top of their cells.
+Align headings and data for columns containing numbers right.
+Align headings and data for columns containing text left.
+Add a 1px top and bottom solid border with the hex color #999, plus a 1px solid border of the same color above the footer.
+Remove the default spacing between the table elements borders to get the expected result.
+Stripe every odd row of the main table with the hex color #eee. */
+
+
+table{
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th:nth-child(1) {
+    width: 30%;
+    text-align: left;
+  }
+  
+  thead th:nth-child(2) {
+    width: 20%;
+    text-align: right;
+  }
+  
+  thead th:nth-child(3) {
+    width: 15%;
+    text-align: right;
+  }
+  
+  thead th:nth-child(4) {
+    width: 40%;
+    text-align: left;
+  }
+
+  tbody td:nth-child(2),
+  tbody td:nth-child(3) {
+   text-align: right;
+ }  
+
+tbody th{
+    text-align: left;
+}
+th,
+td {
+    padding: 0.3em;
+}
+
+tfoot th,
+tfoot td{
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+}
+
+tfoot th{
+    text-align: right;
+}
+
+tbody tr:nth-child(odd){
+    background-color: #eee ;
+}
+
+caption{
+    border-bottom: 1px solid #999; 
+}
