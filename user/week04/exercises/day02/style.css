@@ -1,0 +1,160 @@
+/* General setup */
+@font-face {
+    font-family: 'aaarghnormal';
+    src: url('fonts/aaargh-webfont.woff2') format('woff2'),
+         url('fonts/aaargh-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'abhaya_librebold';
+    src: url('fonts/abhayalibre-bold-webfont.woff2') format('woff2'),
+         url('fonts/abhayalibre-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'artifikamedium';
+    src: url('fonts/artifika-regular-webfont.woff2') format('woff2'),
+         url('fonts/artifika-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    box-sizing: border-box;
+    
+  }
+  
+  body {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+    font-size: 10px;
+    line-height: 1.5;
+    font-family:'aaarghnormal';/
+   
+  }
+  
+  /* Layout */
+  
+  section {
+    float: left;
+    width: 50%;
+  }
+  
+  aside {
+    float: left;
+    width: 30%;
+  }
+  
+  nav {
+    float: left;
+    width: 20%;
+  }
+  
+  footer {
+    clear: both;
+    letter-spacing: 0.5px;
+  }
+  
+  header, section, aside, nav, footer {
+    padding: 20px;
+    font-size: 1.5em;
+  }
+  
+  /* header and footer */
+  
+  header, footer {
+    border-top: 5px solid #a66;
+    border-bottom: 5px solid #a66;
+    font-family: 'abhaya_librebold';
+  }
+  
+  /* WRITE YOUR CODE BELOW HERE */
+
+  header h1 {
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 2.5em;
+ }
+
+  section,
+  aside,
+  nav {
+    letter-spacing: 1px;
+  }
+
+  section h2+p{
+    text-indent: 20px;
+  }
+
+  a:link {
+    color: #a66;
+    outline: none;
+    font-family: 'artifikamedium';
+  }
+  
+  a:hover, a:focus {
+    text-decoration: none;
+  }
+
+  h{
+    font-family: 'abhaya_librebold';
+    /* font-weight: bolder; */
+  }
+
+  a[href^="https"]{
+    background: url('external-link-52.png') no-repeat 100% 0;
+    background-size: 16px 16px;
+    padding-right: 19px;
+  }
+
+  li {
+    line-height: 1.7;
+  }
+
+  section ol {
+    list-style-type:lower-alpha;
+  }
+
+   nav {
+    display: flex;
+    gap: 0.625%;
+  }
+   
+   nav ul{
+    list-style: none;
+   }
+
+  nav a {
+    flex: 1;
+    text-decoration: none;
+    outline: none;
+    text-align: center;
+    line-height: 3;
+    color: #a66;
+  }
+    
+   nav 
+    a:link,
+    a:visited,
+    a:focus{
+        border: 1px solid #a66; 
+        border-radius: 0px; 
+        padding: 10px; 
+        display: block;
+        margin-bottom: 5px;
+        width: 220px;
+        
+   }
+    nav a:hover {
+    background: rgb(248, 210, 189);
+  }
+
+
