@@ -1,0 +1,19 @@
+.container {
+    position: relative;
+    border: 5px solid grey;
+    width: 400px;  
+  }
+  
+  .target {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: blueviolet;
+    color:white;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 50px;
+    width: 100px;
+    border-radius: 5px;
+  }
+  
