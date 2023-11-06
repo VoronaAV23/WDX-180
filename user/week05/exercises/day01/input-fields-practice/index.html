@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --black: #282828;
+            --white: #d0d0d0;
+            --main-bg-clr: var(--black);
+            --input-clr: var(--white);
+            --PH-color: #7c9dbd;
+            --border-clr: #7c9dbd;
+            --hover-border-clr: #8f8f8f;
+            --focus-border-clr: #7c9dbd;
+            --val-err-border-clr: #862e2a;
+            --main-font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            box-sizing: border-box;
+            background-color: var(--main-bg-clr);
+            font-family: var(--main-font-family);
+            color: var(--white)
+        }
+
+        fieldset {
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+        }
+
+    
+        input {
+            background-color: var(--main-bg-clr);
+            color: var(--input-clr);
+            font-family: var(--main-font-family);
+            width: 300px;
+            height: 20px;
+            margin-top: 10px;
+            margin-right: 5px;
+            font-size: 16px;
+            display: inline-block;
+            position: relative;
+        }
+
+        input:hover {
+            border: 3px solid var(--hover-border-clr);
+        }
+
+        input:focus {
+            outline: 3px solid var(--focus-border-clr);
+        }
+
+        input:invalid {
+            border: 3px solid var(--val-err-border-clr);
+        }
+        
+        input:invalid ~ .error::before { 
+        content: "Error: Invalid input";
+        display: block; 
+        background-color: var(--val-err-border-clr); 
+        color: var(--white);
+        font-weight: bolder;
+        margin-top: 10px;
+        padding-top: 5px;
+        width: 170px;
+        text-align: center;
+        height: 25px;
+    }
+
+    </style>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <label for="message">Enter your message:</label>
+            <div class="container">
+                <input type="text" id="message" name="message" pattern="^[A-Za-z0-9!@_$\(\)\-]{1,30}$"
+                    placeholder="Placeholder text here">
+                <span id="count">0/30 characters</span>
+                <span class="error"></span> 
+            </div>
+            <p></p>
+        </fieldset>
+    </form>
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const inputField = document.getElementById ("message");
+            const countCharacter = document.getElementById ("count");
+        
+            inputField.addEventListener("input", function(){
+            updateCountCharacter(inputField.value.length);
+        });
+        
+            function updateCountCharacter(currentLength){
+                countCharacter.textContent = currentLength + "/30 characters";
+            }
+         
+        });
+        
+        </script>
+</body>
+
+
+</html>
