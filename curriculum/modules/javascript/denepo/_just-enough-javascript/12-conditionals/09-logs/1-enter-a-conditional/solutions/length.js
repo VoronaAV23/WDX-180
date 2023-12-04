@@ -1,9 +1,9 @@
-'use strict';
+"use strict";
 
-let language = 'JavaScript';
+let language = "JavaScript";
 
 // find the length of the string
 //  then use strict equality to enter the conditional
-if (__) {
+if (language.length ===  10) {
   console.log(language);
 }

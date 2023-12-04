@@ -1,9 +1,9 @@
-'use strict';
+"use strict";
 
-let language = 'JavaScript';
+let language = "JavaScript";
 
 // access the first character of the string
 //  then use strict equality to enter the conditional
-if (__) {
+if (language[0] === "J") {
   console.log(language);
 }
