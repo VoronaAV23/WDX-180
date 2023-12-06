@@ -24,7 +24,7 @@ title: Week 10 | Web APIs 1: DOM
 
   </h2>
 
-  <span>Updated: 4/12/2023</span>
+  <span>Updated: 6/12/2023</span>
 
   <h2 class="week-controls__next_week">
 
@@ -111,159 +111,7 @@ title: Week 10 | Web APIs 1: DOM
 
 ### Study Plan
 
-  **Document Object Model (DOM) Manipulation - Part 01**
-
-  HTML document is structured as a JavaScript Object. Every HTML element has a different properties which can help to manipulate it. It is possible to get, create, append or remove HTML elements using JavaScript. Check the examples below. Selecting HTML element using JavaScript is similar to selecting using CSS. To select an HTML element, we use tag name, id, class name or other attributes.
-
-  **Getting Element**
-
-  We can access already created element or elements using JavaScript. To access or get elements we use different methods. The code below has four _h1_ elements. Let us see the different methods to access the _h1_ elements.
-
-  ```html
-  <!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <title>Document Object Model</title>
-      </head>
-      <body>
-
-      <h1 class='title' id='first-title'>First Title</h1>
-      <h1 class='title' id='second-title'>Second Title</h1>
-      <h1 class='title' id='third-title'>Third Title</h1>
-      <h1></h1>
-
-      </body>
-    </html>
-  ```
-
-  **Getting elements by tag name**
-
-  **_getElementsByTagName()_**:takes a tag name as a string parameter and this method returns an HTMLCollection object. An HTMLCollection is an array like object of HTML elements. The length property provides the size of the collection. Whenever we use this method we access the individual elements using index or after loop through each individual items. An HTMLCollection does not support all array methods therefore we should use regular for loop instead of forEach.
-
-  ```js
-  // syntax
-  document.getElementsByTagName('tagname')
-  ```
-
-  ```js
-  const allTitles = document.getElementsByTagName('h1')
-
-  console.log(allTitles) //HTMLCollections
-  console.log(allTitles.length) // 4
-
-  for (let i = 0; i < allTitles.length; i++) {
-    console.log(allTitles[i]) // prints each elements in the HTMLCollection
-  }
-  ```
-
- **Getting elements by class name**
-
-  **_getElementsByClassName()_** method returns an HTMLCollection object. An HTMLCollection is an array like list of HTML elements. The length property provides the size of the collection. It is possible to loop through all the HTMLCollection elements. See the example below
-
-  ```js
-  //syntax
-  document.getElementsByClassName('classname')
-  ```
-
-  ```js
-  const allTitles = document.getElementsByClassName('title')
-
-  console.log(allTitles) //HTMLCollections
-  console.log(allTitles.length) // 4
-
-  for (let i = 0; i < allTitles.length; i++) {
-    console.log(allTitles[i]) // prints each elements in the HTMLCollection
-  }
-  ```
-
-  **Getting an element by id**
-
-  **_getElementsById()_** targets a single HTML element. We pass the id without # as an argument.
-
-  ```js
-  //syntax
-  document.getElementById('id')
-  ```
-
-  ```js
-  let firstTitle = document.getElementById('first-title')
-  console.log(firstTitle) // <h1>First Title</h1>
-  ```
-
-  **Getting elements by using querySelector methods**
-
-  The _document.querySelector_ method can select an HTML or HTML elements by tag name, by id or by class name.
-
-  **_querySelector_**: can be used to select HTML element by its tag name, id or class. If the tag name is used it selects only the first element.
-
-  ```js
-  let firstTitle = document.querySelector('h1') // select the first available h1 element
-  let firstTitle = document.querySelector('#first-title') // select id with first-title
-  let firstTitle = document.querySelector('.title') // select the first available element with class title
-  ```
-
-  **_querySelectorAll_**: can be used to select html elements by its tag name or class. It returns a nodeList which is an array like object which supports array methods. We can use **_for loop_** or **_forEach_** to loop through each nodeList elements.
-
-  ```js
-  const allTitles = document.querySelectorAll('h1') # selects all the available h1 elements in the page
-
-  console.log(allTitles.length) // 4
-  for (let i = 0; i < allTitles.length; i++) {
-    console.log(allTitles[i])
-  }
-
-  allTitles.forEach(title => console.log(title))
-  const allTitles = document.querySelectorAll('.title') // the same goes for selecting using class
-  ```
-
-  **Adding attribute**
-
-  An attribute is added in the opening tag of HTML which gives additional information about the element. Common HTML attributes: id, class, src, style, href,disabled, title, alt. Lets add id and class for the fourth title.
-
-  ```js
-  const titles = document.querySelectorAll('h1')
-  titles[3].className = 'title'
-  titles[3].id = 'fourth-title'
-  ```
-
-  **Adding attribute using setAttribute**
-
-  The **_setAttribute()_** method set any html attribute. It takes two parameters the type of the attribute and the name of the attribute.
-  Let's add class and id attribute for the fourth title.
-
-  ```js
-  const titles = document.querySelectorAll('h1')
-  titles[3].setAttribute('class', 'title')
-  titles[3].setAttribute('id', 'fourth-title')
-  ```
-
-  **Adding attribute without setAttribute**
-
-  We can use normal object setting method to set an attribute but this can not work for all elements. Some attributes are DOM object property and they can be set directly. For instance id and class
-
-  ```js
-  //another way to setting an attribute
-  titles[3].className = 'title'
-  titles[3].id = 'fourth-title'
-  ```
-
-  **Adding class using classList**
-
-  The class list method is a good method to append additional class. It does not override the original class if a class exists rather it adds additional class for the element.
-
-  ```js
-  //another way to setting an attribute: append the class, doesn't over ride
-  titles[3].classList.add('title', 'header-title')
-  ```
-
-  **Removing class using remove**
-
-  Similar to adding we can also remove class from an element. We can remove a specific class from an element.
-
-  ```js
-  //another way to setting an attribute: append the class, doesn't over ride
-  titles[3].classList.remove('title', 'header-title')
-  ```
+  [Read: **Document Object Model (DOM) Manipulation - Part 01**](../modules/javascript/web_apis/dom/manipulation/part-01/content/index.md){:target="_blank"}
 
 ### Summary
 
@@ -273,32 +121,7 @@ title: Week 10 | Web APIs 1: DOM
 
   **Simple Manipulation - Part 01**
 
-  In this exercise, we want you to copy and paste the following code in an HTML file named `simple-manipulation.html` and complete the tasks listed below to a JavaScript file called `script.js`:
-
-  ```html
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Paragraphs with IDs</title>
-  </head>
-  <body>
-
-      <p id="paragraph1">This is the first paragraph.</p>
-      <p id="paragraph2">Here is the second paragraph.</p>
-      <p id="paragraph3">The third paragraph is right here.</p>
-      <p id="paragraph4">Finally, the fourth paragraph.</p>
-
-      <script src="./script.js"></script>
-  </body>
-  </html>
-  ```
-
-  1. Get the first paragraph by using **_document.querySelector(tagname)_** and tag name
-  2. Get each of the the paragraph using **_document.querySelector('#id')_** and by their id
-  3. Get all the p as nodeList using **_document.querySelectorAll(tagname)_** and by their tag name
-  4. Set id and class attribute for all the paragraphs using different attribute setting methods
+  Copy the folder `curriculum/week10/exercises/simple_manipulation/` inside folder `user/week10/exercises/day02/` and complete all the challenges found inside the JavaScript file.
 
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week10/progress/progress.draft.w10.d02.csv**
 
@@ -336,150 +159,7 @@ title: Week 10 | Web APIs 1: DOM
 
 ### Study Plan
 
-  **Document Object Model (DOM) Manipulation - Part 02**
-
-  Picking up where we left of in **Part 01**, below there are more ways on how you can manipulate an HTML document using JavaScript!
-
-  **Adding Text to HTML element**
-
-  An HTML is a build block of an opening tag, a closing tag and a text content. We can add a text content using the property _textContent_ or \*innerHTML.
-
-  **Adding Text content using textContent**
-
-  The _textContent_ property is used to add text to an HTML element.
-
-  ```js
-  const titles = document.querySelectorAll('h1')
-  titles[3].textContent = 'Fourth Title'
-  ```
-
-  **Adding Text Content using innerHTML**
-
-  Most people get confused between _textContent_ and _innerHTML_. _textContent_ is meant to add text to an HTML element, however innerHTML can add a text or HTML element or elements as a child.
-
-  **Text Content**
-
-  We assign *textContent* HTML object property to a text
-
-  ```js
-  const titles = document.querySelectorAll('h1')
-  titles[3].textContent = 'Fourth Title'
-  ```
-
-  **Inner HTML**
-
-  We use innerHTML property when we like to replace or a completely new children content to a parent element.
-  It value we assign is going to be a string of HTML elements.
-
-  ```html
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <title>JavaScript for Everyone:DOM</title>
-    </head>
-    <body>
-      <div class="wrapper">
-          <h1>Asabeneh Yetayeh challenges in 2020</h1>
-          <h2>30DaysOfJavaScript Challenge</h2>
-          <ul></ul>
-      </div>
-      <script>
-      const lists = `
-      <li>30DaysOfPython Challenge Done</li>
-              <li>30DaysOfJavaScript Challenge Ongoing</li>
-              <li>30DaysOfReact Challenge Coming</li>
-              <li>30DaysOfFullStack Challenge Coming</li>
-              <li>30DaysOfDataAnalysis Challenge Coming</li>
-              <li>30DaysOfReactNative Challenge Coming</li>
-              <li>30DaysOfMachineLearning Challenge Coming</li>`
-    const ul = document.querySelector('ul')
-    ul.innerHTML = lists
-      </script>
-    </body>
-  </html>
-  ```
-
-  The innerHTML property can allow us also to remove all the children of a parent element. Instead of using removeChild() I would recommend the following method.
-
-  ```html
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <title>JavaScript for Everyone:DOM</title>
-    </head>
-    <body>
-      <div class="wrapper">
-          <h1>Asabeneh Yetayeh challenges in 2020</h1>
-          <h2>30DaysOfJavaScript Challenge</h2>
-          <ul>
-              <li>30DaysOfPython Challenge Done</li>
-              <li>30DaysOfJavaScript Challenge Ongoing</li>
-              <li>30DaysOfReact Challenge Coming</li>
-              <li>30DaysOfFullStack Challenge Coming</li>
-              <li>30DaysOfDataAnalysis Challenge Coming</li>
-              <li>30DaysOfReactNative Challenge Coming</li>
-              <li>30DaysOfMachineLearning Challenge Coming</li>
-          </ul>
-      </div>
-      <script>
-    const ul = document.querySelector('ul')
-    ul.innerHTML = ''
-      </script>
-    </body>
-  </html>
-  ```
-
-  **Adding style**
-
-  **Color**
-
-  Let us add some style to our titles. If the element has even index we give it green color else red.
-
-  ```js
-  const titles = document.querySelectorAll('h1')
-  titles.forEach((title, i) => {
-    title.style.fontSize = '24px' // all titles will have 24px font size
-    if (i % 2 === 0) {
-      title.style.color = 'green'
-    } else {
-      title.style.color = 'red'
-    }
-  })
-  ```
-
-  **Background Color**
-
-  Let us add some style to our titles. If the element has even index we give it green color else red.
-
-  ```js
-  const titles = document.querySelectorAll('h1')
-  titles.forEach((title, i) => {
-    title.style.fontSize = '24px' // all titles will have 24px font size
-    if (i % 2 === 0) {
-      title.style.backgroundColor = 'green'
-    } else {
-      title.style.backgroundColor = 'red'
-    }
-  })
-  ```
-
-  **Font Size**
-
-  Let us add some style to our titles. If the element has even index we give it 20px else 30px
-
-  ```js
-  const titles = document.querySelectorAll('h1')
-  titles.forEach((title, i) => {
-    title.style.fontSize = '24px' // all titles will have 24px font size
-    if (i % 2 === 0) {
-      title.style.fontSize = '20px'
-    } else {
-      title.style.fontSize = '30px'
-    }
-  })
-  ```
-
-  As you have notice, the properties of css when we use it in JavaScript is going to be a camelCase. The  following CSS properties change from background-color to backgroundColor, font-size to fontSize, font-family to fontFamily, margin-bottom to marginBottom.  
+  [Read **Document Object Model (DOM) Manipulation - Part 02**](../modules/javascript/web_apis/dom/manipulation/part-02/content/index.md){:target="_blank"}
 
 ### Summary
 
@@ -489,7 +169,7 @@ title: Week 10 | Web APIs 1: DOM
 
   **Simple Manipulation - Part 02**
 
-  In this exercise, we want you to copy the files you've submitted for the exercise from Part 01, and complete the task found below:
+  In this exercise, we want you to copy the folder (`simple_manipulation/`) with the files you've submitted for the exercise from Part 01, and complete the task found below:
 
   > _(if you have not done the previous exercise, now is a good time to do so!)_
 
@@ -503,7 +183,7 @@ title: Week 10 | Web APIs 1: DOM
 
   **DOM Mini Project**
 
-  In this exercise, we want you to copy [script.js](./exercises/dom_mini_project/script.js) and [index.html](./exercises/dom_mini_project/index.html) and complete the tasks found below. Apply all the styles and functionality using JavaScript only.
+  Copy the folder `curriculum/week10/exercises/dom_mini_project/` inside folder `user/week10/exercises/day03/` and complete all the challenges found below. Apply all the styles and functionality using JavaScript only.
 
   1. The year color is changing every 1 second
   2. The date and time background color is changing every on seconds
@@ -551,172 +231,7 @@ title: Week 10 | Web APIs 1: DOM
 
 ### Study Plan
 
-  **Document Object Model (DOM) Manipulation - Part 03**
-
-  **Creating an Element**
-
-  To create an HTML element we use tag name. Creating an HTML element using JavaScript is very simple and straight forward. We use the method _document.createElement()_. The method takes an HTML element tag name as a string parameter.
-
-  ```js
-  // syntax
-  document.createElement('tagname')
-  ```
-
-  ```html
-  <!DOCTYPE html>
-  <html>
-
-  <head>
-      <title>Document Object Model:30 Days Of JavaScript</title>
-  </head>
-
-  <body>
-
-      <script>
-          let title = document.createElement('h1')
-          title.className = 'title'
-          title.style.fontSize = '24px'
-          title.textContent = 'Creating HTML element DOM Day 2'
-
-          console.log(title)
-      </script>
-  </body>
-
-  </html>
-  ```
-
-  **Creating elements**
-
-  To create multiple elements we should use loop. Using loop we can create as many HTML elements as we want.
-  After we create the element we can assign value to the different properties of the HTML object.
-
-  ```html
-  <!DOCTYPE html>
-  <html>
-
-  <head>
-      <title>Document Object Model:30 Days Of JavaScript</title>
-  </head>
-
-  <body>
-
-      <script>
-          let title
-          for (let i = 0; i < 3; i++) {
-              title = document.createElement('h1')
-              title.className = 'title'
-              title.style.fontSize = '24px'
-              title.textContent = i
-              console.log(title)
-          }
-      </script>
-  </body>
-
-  </html>
-  ```
-
-  **Appending child to a parent element**
-
-  To see a created element on the HTML document we should append it to the parent as a child element. We can access the HTML document body using *document.body*. The *document.body* support the *appendChild()* method. See the example below.
-
-  ```html
-  <!DOCTYPE html>
-  <html>
-
-  <head>
-      <title>Document Object Model:30 Days Of JavaScript</title>
-  </head>
-
-  <body>
-
-      <script>
-          // creating multiple elements and appending to parent element
-          let title
-          for (let i = 0; i < 3; i++) {
-              title = document.createElement('h1')
-              title.className = 'title'
-              title.style.fontSize = '24px'
-              title.textContent = i
-              document.body.appendChild(title)
-          }
-      </script>
-  </body>
-  </html>
-  ```
-
-  **Removing a child element from a parent node**
-
-  After creating an HTML, we may want to remove element or elements and we can use the *removeChild()* method.
-
-  **Example:**
-
-  ```html
-  <!DOCTYPE html>
-  <html>
-
-  <head>
-      <title>Document Object Model:30 Days Of JavaScript</title>
-  </head>
-
-  <body>
-      <h1>Removing child Node</h1>
-      <h2>Asabeneh Yetayeh challenges in 2020</h1>
-      <ul>
-          <li>30DaysOfPython Challenge Done</li>
-          <li>30DaysOfJavaScript Challenge Done</li>
-          <li>30DaysOfReact Challenge Coming</li>
-          <li>30DaysOfFullStack Challenge Coming</li>
-          <li>30DaysOfDataAnalysis Challenge Coming</li>
-          <li>30DaysOfReactNative Challenge Coming</li>
-          <li>30DaysOfMachineLearning Challenge Coming</li>
-      </ul>
-
-      <script>
-          const ul = document.querySelector('ul')
-          const lists = document.querySelectorAll('li')
-          for (const list of lists) {
-              ul.removeChild(list)
-
-          }
-      </script>
-  </body>
-
-  </html>
-  ```
-
-  As we have see in the previous section there is a better way to eliminate all the inner HTML elements or the children of a parent element using the method *innerHTML* properties.
-
-  ```html
-  <!DOCTYPE html>
-  <html>
-
-  <head>
-      <title>Document Object Model:30 Days Of JavaScript</title>
-  </head>
-
-  <body>
-      <h1>Removing child Node</h1>
-      <h2>Asabeneh Yetayeh challenges in 2020</h1>
-      <ul>
-          <li>30DaysOfPython Challenge Done</li>
-          <li>30DaysOfJavaScript Challenge Done</li>
-          <li>30DaysOfReact Challenge Coming</li>
-          <li>30DaysOfFullStack Challenge Coming</li>
-          <li>30DaysOfDataAnalysis Challenge Coming</li>
-          <li>30DaysOfReactNative Challenge Coming</li>
-          <li>30DaysOfMachineLearning Challenge Coming</li>
-      </ul>
-
-      <script>
-          const ul = document.querySelector('ul')
-          ul.innerHTML = ''
-      </script>
-  </body>
-
-  </html>
-  ```
-
-  The above snippet of code cleared all the child elements.  
+  [Read: **Document Object Model (DOM) Manipulation - Part 03**](../modules/javascript/web_apis/dom/manipulation/part-03/content/index.md){:target="_blank"}
 
 ### Summary
 
@@ -726,7 +241,7 @@ title: Week 10 | Web APIs 1: DOM
 
   **Number Generator**
 
-  In this exercise, we want you to copy [index.html](./exercises/number_generator/index.html) and [script.js](./exercises/number_generator/script.js) and complete the tasks found below:
+  Copy the folder `curriculum/week10/exercises/number_generator/` inside folder `user/week10/exercises/day04/` and compete all the challenges found below:
 
   1. Inside the div container with class name `wrapper` on the HTML document, create **dynamically** 102 `div` container, each one containing a number from 0 to 101.
   2. Append style to each number as described below:
@@ -740,13 +255,13 @@ title: Week 10 | Web APIs 1: DOM
 
   **Countries List**
 
-  In this exercise, we want you to copy [countries.js](./exercises/countries_list/countries.js) and [index.html](./exercises/countries_list/index.html) and use the countries array provided to display **dynamically** all countries as shown in the image below:
+  Copy the folder `curriculum/week10/exercises/countries_list/` inside folder `user/week10/exercises/day04/` and use the countries array provided to display **dynamically** all countries as shown in the image below:
 
   ![World Countries List](./assets/countries_list.png)
 
   **Asabeneh's Challenge**
 
-  In this exercise, we want you to copy [script.js](./exercises/asabeneh_challenge/script.js) and [index.html](./exercises/asabeneh_challenge/index.html) and use the asabenehChallenges2020 array provided to display **dynamically** its content as show in the image below: 
+  Copy the folder `curriculum/week10/exercises/asabeneh_challenge/` inside folder `user/week10/exercises/day04/` and use the asabenehChallenges2020 array provided to display **dynamically** its content as show in the image below: 
 
   ![Challenge Information](./assets/dom_mini_project_challenge_info_day_2.3.gif)
 
