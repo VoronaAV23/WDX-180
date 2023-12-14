@@ -9,8 +9,21 @@ whenFormDataChanges('search-field', () => {
   console.log('--- form data changed ---');
 
   // --- read the user's input ---
+  let charToRemove = readString('character');
+  let textToRead = readString('phrase');
+  let result = '';
+ 
+  if (charToRemove.length > 1){
+  displayString('filtered', 'you can only skip one character at a time');
+  }
+   // --- remove the character if there is only one ---
+  for(let char of textToRead){
+    if (char !== charToRemove){
+        result = result + char;
 
-  // --- remove the character if there is only one ---
-
+      }
+}
+    
   // --- display the result ---
+  displayString('filtered',result)
 });

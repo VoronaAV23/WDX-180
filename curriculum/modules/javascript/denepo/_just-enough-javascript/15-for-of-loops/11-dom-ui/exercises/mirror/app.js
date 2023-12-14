@@ -4,13 +4,17 @@ import {
   displayString,
 } from '../../../../../lib/dom-io/index.js';
 
-whenFormDataChanges('___', () => {
+whenFormDataChanges('input', () => {
   // debugger;
   console.log('--- form data changed ---');
 
-  // --- read the user's input ---
+  let text1 = readString('to-mirror')
+  let mirrored='';
+  for(let char of text1){
+    mirrored = char + mirrored;
+  }
 
-  // --- mirror the text ---
-
+ let result = mirrored + ' | ' + text1;
+ displayString('output', result)
   // --- display the result ---
 });

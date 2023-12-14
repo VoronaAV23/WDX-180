@@ -4,13 +4,16 @@ import {
   displayString,
 } from '../../../../../lib/dom-io/index.js';
 
-whenFormDataChanges('___', () => {
-  // debugger;
+whenFormDataChanges('input', () => {
   console.log('--- form data changed ---');
 
-  // --- read the user's input ---
+  let userInput = readString('pyramid-bricks');
+  let pyramid = '\n';
+  let row = '';
+  for (let char of userInput){
+    row = row + char;
+    pyramid = pyramid + row + "\n";
+  }
 
-  // --- build a pyramid ---
-
-  // --- display the pyramid ---
+  displayString('out', pyramid)
 });

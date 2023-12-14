@@ -1,11 +1,15 @@
-'use strict';
+"use strict";
 
-let language = ' j a v a s c r i p t';
+let language = " j a v a s c r i p t";
 
-let logIt = __;
+let logIt = "";
 
-for (let _ of _) {
-  if (_) {
+for (let character of language) {
+  if (character !== " ") {
+    logIt = logIt + character;
   }
-  __;
 }
+for (let char of logIt){
+  console.log(char);
+}
+
