@@ -11,9 +11,12 @@ load_script_js_via_src:
 
 - Watch the [**video**](https://www.youtube.com/shorts/Ue3VUsZwAJ0){:target="_blank"}
 
+<iframe width="100%" height="480" src="https://www.youtube.com/embed/Ue3VUsZwAJ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border: 4px solid red;"></iframe>
+
 - Check the [MDN page on `:has()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:has){:target="_blank"}
 
 - Experiment with the code below:
+  - We **highly recommend** that you first check the code, then tweak it and play around with it and lastly clear the code and try to replicate the example from scratch.
 
 ```html
 <style>
